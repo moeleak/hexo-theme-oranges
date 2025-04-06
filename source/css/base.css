@@ -1,3 +1,36 @@
+/*
+@font-face {
+  font-family: 'AaKaiSong';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/bin/fonts-zh/AaKaiSong.ttf) format('ttf');
+}
+*/
+
+/*
+body:lang(en), *[lang='en'],
+body:lang(fr), *[lang='fr'],
+body:lang(it), *[lang='it'],
+body:lang(de), *[lang='de'] {
+  font-family: 'Livvic', 'AaKaiSong', 'AaKaiSong Stray ee87d30c', sans-serif;
+}
+body:lang(zh), *[lang='zh'] {
+  font-family: 'AaKaiSong', 'AaKaiSong Stray ee87d30c', 'Livvic — Lighter Bold', sans-serif;
+}
+.symbols,
+body:lang(el), *[lang='el'],
+body:lang(grc), *[lang='grc'] {
+  font-family: 'Open Sans — Greek', 'Livvic', 'AaKaiSong', 'AaKaiSong Stray ee87d30c', sans-serif;
+}
+body:lang(ru), *[lang='ru'] {
+  font-family: 'Open Sans — Cyrillic', 'Livvic', 'AaKaiSong', 'AaKaiSong Stray ee87d30c', sans-serif;
+}
+pre, code, .tt {
+  font-family: 'Sono', 'AaKaiSong', 'AaKaiSong Stray ee87d30c', monospace;
+}
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +41,20 @@ html, body {
   letter-spacing: 0.01rem;
   background-color: var(--bg-body);
   transition: color 400ms ease-in-out 0s, background-color 400ms ease-in-out 0s;
+  /*font-family: Consolas, "Liberation Mono", Menlo, Monaco, "AaKaiSong", "AaKaiSong Stray ee87d30c", "Hiragino Sans GB", "Microsoft YaHei", sans-serif*/
   font-family: Consolas, "Liberation Mono", Menlo, Monaco, "Source Han Sans CN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif
+  
 }
 
 body.hidden {
   overflow: hidden;
   padding-right: 6px;
+}
+
+.card-meta{
+  font-size: 1.5rem;
+  color: var(--color-text-base);
+  margin-top: 10px;
 }
 
 .markdown-body {
@@ -25,6 +66,7 @@ body.hidden {
   line-height: 2;
   word-wrap: break-word;
   color: var(--color-text-md-content)
+
 }
 
 @media (max-width: 768px) {
@@ -629,8 +671,8 @@ a:hover {
 
 .tools-bar {
   position: fixed;
-  right: 2.2rem;
-  bottom: 2.2rem;
+  left: 2.2rem;
+  top: 2.2rem;
 }
 
 .tools-bar .tools-bar-item {
@@ -642,30 +684,6 @@ a:hover {
   display: none;
 }
 
-.share-icon {
-  position: relative
-}
-
-.share-content {
-  position: absolute;
-  top: 0;
-  right: 30px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  transition: all 0.3s;
-  z-index: 2;
-}
-
-.share-content.hidden {
-  opacity: 0;
-  z-index: -1;
-  right: -10px;
-}
-
-.share-content .share-item {
-  padding: 0 10px;
-}
 
 .pin-copy {
   position: relative;

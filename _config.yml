@@ -21,13 +21,13 @@
 # 网站图标
 favicon:
   enable: true
-  icon: /images/favicon.png
-  touch_icon: /images/favicon.png
+  icon: /images/favicon.ico
+  touch_icon: /images/favicon.ico
 
 # 用户头像与昵称
 avatar:
-  author_photo: /images/avatar.png
-  author_nickname: Oranges
+  author_photo: /images/avatar.jpeg
+  author_nickname: 静静
   path: /
 
 # Google 分析
@@ -69,8 +69,8 @@ comments:
     # https://disqus.com/
     # 注册账号，获取shortname.disqus.com，shortname为你定义的唯一name
     # 例：我注册配置完毕后的网址为zxcxxxx.disqus.com，https-zxcxxxx-github-io即为shortname
-    enable: false
-    shortname: https-zxcxxxx-github-io
+    enable: true
+    shortname: jing-jing-s-blog
   
   # waline https://waline.js.org
   waline:
@@ -84,16 +84,11 @@ navbar:
     enable: true
     path: /
     key: home
-  -
-    name: Archives
-    enable: true
-    path: /archives/
-    key: archives
-  -
-    name: Categories
-    enable: false
-    path: /categories/
-    key: categories
+  #-
+  #  name: Archives
+  #  enable: true
+  #  path: /archives/
+  #  key: archives
   -
     name: Tags
     enable: true
@@ -124,13 +119,33 @@ friends:
   # site: 地址
   # meta: 描述
   -
-    nickname: Zcheng
-    site: https://zcheng.site/
+    nickname: 猎风
+    site: https://www.northarea.tech
     meta:
   -
-    nickname: Hexo
-    site: https://hexo.io/
+    nickname: 圈圈
+    site: https://blog.tse.moe
     meta:
+  -
+    nickname: 小南
+    site: https://www.xnmoe.com
+    meta:
+  -
+    nickname: 山茶花舍
+    site: https://irithys.com
+    meta: 吕楪在记录自己的生活
+  -
+    nickname: 蝴蝶曾在此处
+    site: https://write.c7.io/tyou
+    meta: Strength can be built.
+  -
+    nickname: 谢谢所有的鱼
+    site: https://gregueria.icu
+    meta: 您首页的奶牛猫图片转发大使
+  -
+    nickname: 甜鱼Ayu
+    site: https://ayu.land
+    meta: 
 
 # 页脚信息
 footer:
@@ -145,8 +160,8 @@ footer:
     -
       name: github
       icon: github
-      path: https://github.com/zchengsite/hexo-theme-oranges
-    # -
+      path: https://github.com/moeleak
+    #-
     #   name: email
     #   icon: envelope
     #   path: 
@@ -154,10 +169,10 @@ footer:
     #   name: facebook
     #   icon: facebooksquare
     #   path:
-    # -
-    #   name: twitter
-    #   icon: twitter
-    #   path:
+    -
+      name: twitter
+      icon: twitter
+      path: https://x.com/moeleak
     # -
     #   name: wechat
     #   icon: wechat
@@ -178,11 +193,11 @@ footer:
     # 一般用来显示根据各种场景需要切换的文本，如时间年份
     # 如：{thisYear} 会被替换为今年年份
     -
-      name: Copyright © {thisYear} Oranges
-      path: https://github.com/zchengsite/hexo-theme-oranges
-    -
-      name: Theme by Oranges | Powered by Hexo
-      path: https://github.com/zchengsite/hexo-theme-oranges
+      name: Flowers were sold out but I'd like to plant one for you
+      path:
+    #-
+    #  name: Theme by Oranges | Powered by Hexo
+    #  path: https://github.com/zchengsite/hexo-theme-oranges
 
   # 浏览量统计
   # http://busuanzi.ibruce.info/
@@ -223,7 +238,7 @@ postShare:
     enable: true
 
   facebook:
-    enable: true
+    enable: false
 
 # 代码块配置
 codeBlock:
@@ -280,4 +295,5 @@ cdns:
       url: https://cdn.jsdelivr.net/npm/@waline/client@2.5.1/dist/legacy.min.js
 
 # 主题色
-themeColor: '#808080'
+themeColor: '#ab4a4a'
+
